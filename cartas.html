@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>cartas</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script src="cartas.js" charset="utf-8"></script>
+    <style media="screen">
+        .caja {
+            width: 100px;
+            height: 139px;
+            margin: 13px;
+            text-align: center;
+            float: left;
+        }
+
+        ;
+        body {
+            background-color: rgb(42, 140, 43);
+        }
+
+        ;
+        #intro {
+            width: auto;
+            height: auto;
+            margin-bottom: 20px;
+            text-align: center;
+            background-color: rgb(42, 140, 43), solid;
+        }
+
+        ;
+        .intoduct {
+
+            font-size: 90px;
+        }
+
+        ;
+    </style>
+</head>
+
+<body>
+    <h1>Juego De Cartas </h1>
+<p>Un simple juego de cartas haz click para jugar.</p>
+
+
+    <div class="container">
+
+
+<div class="container">
+
+
+<div class="row">
+  <div class="col-sm-3"></div>
+    <div class="col-sm-2">
+            <button class="btn btn-default" onclick="quitar_mostrado('baraja'),mostrar_img()">mostrar_baraja</button>
+
+          </div>
+        </div>
+        <br>
+</div>
+        <div class="row">
+          <div class="col-sm-3">
+            <button class="btn btn-default" onclick="jugar('jugadorA'),quitar_mostrado('baraja')">Jugador A</button>
+            <div id="jugadorA"></div>
+          </div>
+          <div class="col-sm-3"><button class="btn btn-primary" onclick="quitar_mostrado('baraja'),generar_baraja(),quitar_mostrado('jugadorA'),quitar_mostrado('jugadorB')">refrescar baraja</button></div>
+          <div class="col-sm-3">
+            <button class="btn btn-default" onclick="jugar('jugadorB'),quitar_mostrado('baraja')">Jugador B</button>
+            <div id="jugadorB"></div>
+          </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+        <div id="baraja"></div>
+
+
+
+</body>
+
+</html>
